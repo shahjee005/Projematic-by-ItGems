@@ -11,5 +11,23 @@
 } 
 .well {height:auto;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 50px;}
+/* citation link: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column-gap */
+   
+.grid-container {
+  display: grid;
+  grid-gap: 20px 50px;
+  grid-template-columns: auto auto auto;
+  background-color:none;
+  padding: 400px;
+}
 
+.grid-item {
+  background-color: rgba(26, 170, 180, 0.842);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  height: 50px;
+}
