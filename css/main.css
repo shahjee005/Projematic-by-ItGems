@@ -1,3 +1,15 @@
-*{
-    background-color: rgb(252, 247, 248);
-}
+
+.container-fluid  { 
+    background-color:#003399; 
+    padding: 20px;
+} 
+
+  .row.content {height:auto;
+    margin: 0;
+    padding-top: 0;
+
+} 
+.well {height:auto;
+    margin: auto;
+    padding-top: 50px;
+

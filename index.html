@@ -1,17 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projematic </title>
-   
-    <!-- Styles -->
-    <link rel="stylesheet" href="./css/main.css">
-    <!-- Scripts -->
-    <script type="text/javascript" src="./js/scripts.js" defer></script>
-    
+
+    <!-- Vendor Styles 
+ <link rel= "stylesheet" href="./Vendor/Bootstrap/css/bootstrap.min.css" >
+
+ Vendor Scripts  
+ <script type="text/javascript" src="./Vendor/Bootstrap/jquery/jquery.min.js" ></script>
+    Styles   -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- Scripts   -->
+    <!-- <script type="text/javascript" src="./js/scripts.js" defer></script> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    
+    <!-- Citation https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_right&stacked=h-->
+    <nav class="navbar navbar-inverse bg-light">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Projematic </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Side nav -->
+    <div class="row content">
+        <div class="col-sm-2 side-nav">
+            <div class="well">
+                <p><a href="#">Pre-Preoject</a></p>
+                <button type="button" class="btn btn-primary btn-lg">Click</button>
+            </div>
+
+            <div class="well">
+                <p><a href="#">Initiation</a></p>
+                <button type="button" class="btn btn-primary btn-lg">Click</button>
+            </div>
+
+            <div class="well">
+                <p><a href="#">Plaining</a></p>
+                <button type="button" class="btn btn-primary btn-lg">Click</button>
+            </div>
+            <div class="well">
+                <p><a href="#">Execution</a></p>
+                <button type="button" class="btn btn-primary btn-lg">Click</button>
+            </div>
+            <div class="well">
+                <p><a href="#">Closing</a></p>
+                <button type="button" class="btn btn-primary btn-lg">Click</button>
+            </div>
+        </div>
+
+        <!-- Center Content -->
+
+        <div class="col-sm-8 text-left">
+
+            <h1><strong>About Projematic</strong> </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.
+            </p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.
+            </p>
+
+        </div>
 </body>
+
 </html>
