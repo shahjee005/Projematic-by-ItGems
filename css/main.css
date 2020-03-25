@@ -1,15 +1,138 @@
-
 .container-fluid  { 
     background-color:#003399; 
     padding: 20px;
 } 
 
-  .row.content {height:auto;
-    margin: 0;
-    padding-top: 0;
+/* citation link: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column-gap */
+   
+/* .item1 {
+  grid-area: myArea;
+} */
 
-} 
-.well {height:auto;
-    margin: auto;
-    padding-top: 50px;
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea . . . .';
+  grid-gap: 50px;
+  background-color:none;
+  padding: auto;
+}
 
+
+
+
+
+/* Question ? Its not changing clour  */
+.grid-container .item1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:red;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: auto;
+  font-size: 25px;
+}
+.btn.btn-primary.btn-lg {
+  background-color: #003399;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+/* Tooltip on hover   */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: rgb(160, 70, 18);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* Tool Tip End  */
+
+/* Plaining.html */
+
+h1 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #003399;
+  padding: 10px;}
+h2 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(23, 37, 90);
+
+}
+.outer-layer{
+  background-color:none;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  padding-top: auto;
+  padding-bottom:50px ;
+  height: fit-content;
+  width:800px;
+  margin: auto;
+}
+.grid-container1 {
+  display: grid;
+  grid-gap: 20px 50px;
+  grid-template-columns: auto auto auto  ;
+  background-color:none;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  padding: 50px;
+  height: fit-content;
+  width:500px;
+  margin: auto;
+ 
+}
+
+.grid-item {
+  background-color:#00E6E6;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: AUTO;
+  padding: 10px;
+  width:AUTO;
+  font-size: 15px;
+  text-align: center;
+  height: 50px;}
+  
+
+  .grid-item1 {
+    grid-column-end: span 3;
+    background-color:#00E6E6;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: AUTO;
+    padding: 10px;
+    width:auto;
+    font-size: 15px;
+    text-align: center;
+    height: 50px;}
+/* h1{text-align: center;
+
+} */
