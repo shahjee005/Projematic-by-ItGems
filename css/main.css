@@ -1,25 +1,59 @@
-
 .container-fluid  { 
     background-color:#003399; 
     padding: 20px;
 } 
 
-  .row.content {height:auto;
-    margin: 0;
-    padding-top: 0;
-
-} 
-.well {height:auto;
-    margin: auto;
-    padding-top: 50px;}
 /* citation link: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column-gap */
    
+/* .item1 {
+  grid-area: myArea;
+} */
+
 .grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea . . . .';
+  grid-gap: 50px;
+  background-color:none;
+  padding: auto;
+}
+
+
+/* Question ? Its not changing clour  */
+.grid-container .item1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:red;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: auto;
+  font-size: 25px;
+}
+.btn.btn-primary.btn-lg {
+  background-color: #003399;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+/* .grid-container {
   display: grid;
   grid-gap: 20px 50px;
   grid-template-columns: auto auto auto;
-  background-color:none;
-  padding: 400px;
+  background-color:grey;
+  padding: 30px;
 }
 
 .grid-item {
@@ -27,7 +61,11 @@
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 25px;
   padding: 10px;
+  width: auto;
   font-size: 20px;
   text-align: center;
   height: 50px;
-}
+} */
+/* h1{text-align: center;
+
+} */
